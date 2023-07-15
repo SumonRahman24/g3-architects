@@ -1,19 +1,46 @@
+/* font */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+:root {
+  --dark01: #131313;
+  --dark02: #424242;
+  --dark03: #727272;
+  --orange: #ff900e;
+  --light-pink: #fff4e7;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-body {
   font-family: "Work Sans", sans-serif;
 }
 
-:root {
-  --dark1: #131313;
-  --dark3: #727272;
-  --dark2: #424242;
-  --primary-color: #ff900e;
+/* ------------------------------------------------------
+------------- Common styles -----------------------------
+------------------------------------------------------ */
+
+.container {
+  padding: 0 150px;
+  margin: 0 auto;
 }
+
+.title--primary {
+  font-size: 2.8125rem;
+  font-weight: 700;
+  color: var(--dark01);
+  line-height: 50px;
+  margin-bottom: 24px;
+}
+
+.desc-primary {
+  font-size: 1rem;
+  color: var(--dark03);
+}
+
+/* ------------------------------------------------------
+------------- Button Styles -----------------------------
+------------------------------------------------------ */
 
 /* Primary Button */
 .primary-btn {
@@ -27,28 +54,23 @@ body {
   cursor: pointer;
 }
 
-/* banner section */
+/* ------------------------------------------------------
+------------- Header Styles -----------------------------
+------------------------------------------------------ */
+
 .header-container {
-  background: rgba(255, 144, 14, 0.1);
+  background: var(--light-pink);
+  padding-top: 30px;
 }
 
-/* navigation area */
+/* Navigation Area */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
-
-  max-width: 1140px;
-  margin: 0 auto;
 }
 
-.logo {
-  font-size: 2.375rem;
-  font-weight: 700;
-}
-
-nav ul {
+nav > ul {
   display: flex;
   list-style: none;
   font-weight: 500;
@@ -86,8 +108,6 @@ nav a {
 }
 
 .hero-desc {
-  color: var(--dark3);
-  font-size: 1rem;
   font-weight: 400;
   line-height: 20px;
   margin: 20px auto;
@@ -145,4 +165,52 @@ nav a {
 .text-hilight3 {
   font-weight: bold;
   color: var(--primary-color);
+}
+
+/* ----------------------------------
+------- Best Properties Section------
+------------------------------------ */
+
+.best-properties-section h2,
+p {
+  text-align: center;
+}
+
+.properties {
+  display: flex;
+}
+.property-box {
+  border: 2px solid green;
+}
+
+/* ----------------------------
+-- small device responsive ---
+-------------------------------- */
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+  }
+  .logo {
+    text-align: center;
+    width: 100%;
+  }
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 5px;
+  }
+  .features-section {
+    padding: 0 5px;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .features-img-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 35px;
+    width: 100%;
+  }
+  .features-content {
+    display: flex;
+    flex-direction: column;
+  }
 }
