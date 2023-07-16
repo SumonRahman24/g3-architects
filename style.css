@@ -13,25 +13,27 @@
   --dark02: #424242;
   --dark03: #727272;
   --orange: #ff900e;
+  --hotpink: #fff4e7;
 }
 
 /* ----[ Common Style ]------- */
 .section-container {
   padding: 0 170px;
+  margin-top: 100px;
 }
 
 .title--primary {
-  font-size: 45px;
+  font-size: 38px;
   font-weight: 700;
   color: var(--dark01);
 }
 
-.title--desc {
+.desc--primary {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
   color: var(--dark03);
-  margin: 24px auto;
+  margin: 12px auto;
 }
 
 /* -----[ Some Facts Section ]--------  */
@@ -50,6 +52,37 @@
 
   width: 200.831px;
   height: 200.831px;
+}
+
+/* -----[ Our Sponsors Section ]--------  */
+.our-sponsors > h2,
+p {
+  text-align: center;
+}
+
+.sponsors-container {
+  display: flex;
+  /* align-items: center; */
+  gap: 50px;
+  border: 2px solid green;
+}
+
+.sponsors-item img {
+  width: 50%;
+}
+
+/* -----[ Footer Section ]--------  */
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--hotpink);
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 23px;
+  border-radius: 8px;
+  font-size: 18px;
 }
 
 /* --- { Responsive for Small Device  } */
