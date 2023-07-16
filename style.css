@@ -1,13 +1,5 @@
-/* font */
+/* font  */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
-
-:root {
-  --dark01: #131313;
-  --dark02: #424242;
-  --dark03: #727272;
-  --orange: #ff900e;
-  --light-pink: #fff4e7;
-}
 
 * {
   margin: 0;
@@ -16,201 +8,46 @@
   font-family: "Work Sans", sans-serif;
 }
 
-/* ------------------------------------------------------
-------------- Common styles -----------------------------
------------------------------------------------------- */
+:root {
+  --dark01: #131313;
+  --dark02: #424242;
+  --dark03: #727272;
+  --orange: #ff900e;
+}
 
-.container {
-  padding: 0 150px;
-  margin: 0 auto;
+/* ----[ Common Style ]------- */
+.section-container {
+  padding: 0 170px;
 }
 
 .title--primary {
-  font-size: 2.8125rem;
+  font-size: 45px;
   font-weight: 700;
   color: var(--dark01);
-  line-height: 50px;
-  margin-bottom: 24px;
 }
 
-.desc-primary {
-  font-size: 1rem;
+.title--desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
   color: var(--dark03);
+  margin: 24px auto;
 }
 
-/* ------------------------------------------------------
-------------- Button Styles -----------------------------
------------------------------------------------------- */
-
-/* Primary Button */
-.primary-btn {
-  background: var(--primary-color);
-  color: #ffffff;
-  padding: 14px 16px;
-  border-radius: 6px;
-  border: none;
-  font-size: 0.8125rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-/* ------------------------------------------------------
-------------- Header Styles -----------------------------
------------------------------------------------------- */
-
-.header-container {
-  background: var(--light-pink);
-  padding-top: 30px;
-}
-
-/* Navigation Area */
-nav {
+/* -----[ Some Facts Section ]--------  */
+.facts-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-nav > ul {
-  display: flex;
-  list-style: none;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 26px;
   gap: 20px;
-  color: var(--dark2);
-}
-nav a {
-  text-decoration: none;
+  padding: 0 50px;
 }
 
-/* Hero Section */
-.hero-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 100px;
+.facts-item {
+  border: 1px solid var(--orange);
+  border-radius: 8px;
   text-align: center;
+  padding: 20px;
 
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-.hero-content {
-  max-width: 862px;
-  margin: 0 auto;
-}
-
-.hero-title {
-  font-size: 2.8125rem;
-  font-weight: 700;
-  color: var(--dark1);
-}
-
-.hero-desc {
-  font-weight: 400;
-  line-height: 20px;
-  margin: 20px auto;
-}
-
-.hero-img img {
-  width: 100%;
-  margin-top: 24px;
-}
-
-/* features section */
-.features-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  max-width: 1100px;
-  margin: 50px auto;
-}
-.features-img-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-.featues-img img {
-  width: 100%;
-}
-
-.features-content {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 60px;
-}
-
-.features-title {
-  font-size: 1.875rem;
-}
-
-.features-desc {
-  font-size: 1rem;
-  line-height: 20px;
-  font-weight: 400px;
-  color: var(--dark3);
-  margin: 20px auto;
-}
-
-.text-hilight1 {
-  font-weight: 500;
-  color: var(--dark3);
-}
-.text-hilight2 {
-  font-weight: bold;
-  color: var(--dark1);
-}
-.text-hilight3 {
-  font-weight: bold;
-  color: var(--primary-color);
-}
-
-/* ----------------------------------
-------- Best Properties Section------
------------------------------------- */
-
-.best-properties-section h2,
-p {
-  text-align: center;
-}
-
-.properties {
-  display: flex;
-}
-.property-box {
-  border: 2px solid green;
-}
-
-/* ----------------------------
--- small device responsive ---
--------------------------------- */
-@media screen and (max-width: 576px) {
-  nav {
-    flex-direction: column;
-  }
-  .logo {
-    text-align: center;
-    width: 100%;
-  }
-  nav ul {
-    flex-direction: column;
-    margin-top: 10px;
-    gap: 5px;
-  }
-  .features-section {
-    padding: 0 5px;
-    flex-direction: column;
-    gap: 25px;
-  }
-  .features-img-container {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 35px;
-    width: 100%;
-  }
-  .features-content {
-    display: flex;
-    flex-direction: column;
-  }
+  width: 200.831px;
+  height: 200.831px;
 }
