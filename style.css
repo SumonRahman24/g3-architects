@@ -19,7 +19,7 @@
 /* ----[ Common Style ]------- */
 .section-container {
   padding: 0 120px;
-  /* margin-top: 100px; */
+  margin-top: 100px;
 }
 
 .title--primary {
@@ -73,7 +73,6 @@ nav a {
 
 .banner-container {
   text-align: center;
-  /* margin: 80px auto; */
 }
 
 .banner-img {
@@ -100,6 +99,44 @@ nav a {
 
 .quick-list-img img {
   width: 100%;
+}
+
+/* -----[ Features Section ]--------  */
+.features-container {
+  display: flex;
+  gap: 50px;
+}
+
+.features-img img {
+  width: 100%;
+}
+
+.card-container {
+  padding-top: 10px;
+}
+
+.card {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+
+  height: 120px;
+  width: 500px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: gray;
+}
+
+.card-desc {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--dark03);
+  margin: 8px auto;
 }
 
 /* -----[ Some Facts Section ]--------  */
