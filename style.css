@@ -149,6 +149,8 @@ nav a {
   padding: 23px;
   border-radius: 8px;
   font-size: 18px;
+
+  text-align: center;
 }
 
 /* --- { Responsive for Small Device  } */
