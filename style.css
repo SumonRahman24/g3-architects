@@ -1,5 +1,5 @@
 /* font  */
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap");
 
 * {
   margin: 0;
@@ -18,8 +18,8 @@
 
 /* ----[ Common Style ]------- */
 .section-container {
-  padding: 0 170px;
-  margin-top: 100px;
+  padding: 0 120px;
+  /* margin-top: 100px; */
 }
 
 .title--primary {
@@ -46,6 +46,43 @@
 }
 
 /* ==================================================================== */
+
+/* -----[ Header Section ]--------  */
+header {
+  background: rgba(255, 144, 14, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  font-size: 16px;
+  color: var(--dark02);
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.banner-container {
+  text-align: center;
+  margin: 80px auto;
+}
+
+.banner-img {
+  margin: 30px auto;
+}
+
+.banner-container img {
+  width: 100%;
+}
 
 /* -----[ Quick List Section ]--------  */
 .quick-list-container {
@@ -136,6 +173,16 @@
   }
   .section-container {
     padding: 10px 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  nav > ul {
+    flex-direction: column;
+    gap: 15px;
   }
 }
 
